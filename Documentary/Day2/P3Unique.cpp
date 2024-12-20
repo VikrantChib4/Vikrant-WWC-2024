@@ -23,7 +23,7 @@ int main() {
     cout << "Number of unique elements: " << uniqueCount << endl;
     cout << "Modified array: ";
     for (int i = 0; i < uniqueCount; ++i) {
-        cout << nums[i] << " ";
+        cout << nums[i] << "  ";
     }
     cout << endl;
 
