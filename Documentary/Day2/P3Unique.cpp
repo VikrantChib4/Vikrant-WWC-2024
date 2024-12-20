@@ -5,7 +5,8 @@ int rem(int nums[], int n) {
     if (n == 0) return 0;
 
     int slow = 0; 
-    for (int fast = 1; fast < n; ++fast) {
+    for (int fast = 1; fast < n; ++fast) 
+    {
         if (nums[fast] != nums[slow]) {
             slow++;
             nums[slow] = nums[fast];
