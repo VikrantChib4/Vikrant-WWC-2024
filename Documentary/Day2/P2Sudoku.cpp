@@ -40,7 +40,7 @@ int main() {
     };
 
     if (isValidSudoku(board)) {
-        cout << "The Sudoku board is valid." << endl;
+        cout << "The Sudoku board is valid ." << endl;
     } else {
         cout << "The Sudoku board is invalid." << endl;
     }

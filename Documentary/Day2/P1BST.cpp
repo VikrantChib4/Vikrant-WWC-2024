@@ -26,7 +26,7 @@ void printTree(TreeNode* root) {
         return;
     }
     printTree(root->left);
-    cout << root->val << " ";
+    cout << root->val << "  ";
     printTree(root->right);
 }
 int main() {
