@@ -111,7 +111,7 @@ public:
             return;
         }
 
-        cout << "Compartment " << compartmentID << " has " << compartment->availableSeats << " seats available.\n";
+        cout << "Compartment " << compartmentID << " has  " << compartment->availableSeats << " seats available.\n";
     }
 
     ~TrainReservationSystem() {
