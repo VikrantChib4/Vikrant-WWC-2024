@@ -3,5 +3,5 @@ using namespace std;
 int main()
 {
     int a =5+4;
-    cout<< a;
+    cout<< a<<endl;
 }
