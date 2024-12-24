@@ -26,7 +26,6 @@ public:
     }
 
     bool isWinner() {
-        // Check rows, columns, and diagonals
         for (int i = 0; i < 3; i++) {
             if ((board[i][0] == currentPlayer && board[i][1] == currentPlayer && board[i][2] == currentPlayer) ||
                 (board[0][i] == currentPlayer && board[1][i] == currentPlayer && board[2][i] == currentPlayer)) {
@@ -60,8 +59,6 @@ public:
             printBoard();
             cout << "Player " << currentPlayer << ", enter your move (row and column): ";
             cin >> row >> col;
-
-            // Adjust for 0-based indexing
             row--;
             col--;
 
