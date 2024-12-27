@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-
 using namespace std;
 
 bool isPresent(const vector<int>& arr, int k) {
