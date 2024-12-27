@@ -1,7 +1,9 @@
 #include <iostream>
 #include <vector>
 
-bool isPresent(const std::vector<int>& arr, int k) {
+using namespace std;
+
+bool isPresent(const vector<int>& arr, int k) {
     int left = 0;
     int right = arr.size() - 1;
 
@@ -20,17 +22,34 @@ bool isPresent(const std::vector<int>& arr, int k) {
 }
 
 int main() {
-    std::vector<int> arr1 = {1, 2, 3, 4, 6};
+    vector<int> arr1;
+    arr1.push_back(1);
+    arr1.push_back(2);
+    arr1.push_back(3);
+    arr1.push_back(4);
+    arr1.push_back(6);
+    
     int k1 = 6;
-    std::cout << std::boolalpha << isPresent(arr1, k1) << std::endl; // Output: true
+    cout << boolalpha << isPresent(arr1, k1) << endl; // Output: true
 
-    std::vector<int> arr2 = {1, 2, 4, 5, 6};
+    vector<int> arr2;
+    arr2.push_back(1);
+    arr2.push_back(2);
+    arr2.push_back(4);
+    arr2.push_back(5);
+    arr2.push_back(6);
+    
     int k2 = 3;
-    std::cout << std::boolalpha << isPresent(arr2, k2) << std::endl; // Output: false
+    cout << boolalpha << isPresent(arr2, k2) << endl; // Output: false
 
-    std::vector<int> arr3 = {2, 3, 5, 6};
+    vector<int> arr3;
+    arr3.push_back(2);
+    arr3.push_back(3);
+    arr3.push_back(5);
+    arr3.push_back(6);
+    
     int k3 = 1;
-    std::cout << std::boolalpha << isPresent(arr3, k3) << std::endl; // Output: false
+    cout << boolalpha << isPresent(arr3, k3) << endl; // Output: false
 
     return 0;
 }
